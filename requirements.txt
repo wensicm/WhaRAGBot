@@ -1,0 +1,11 @@
+pandas>=2.2
+numpy>=1.26
+tqdm>=4.66
+sentence-transformers>=3.0
+faiss-cpu>=1.8
+openai>=1.55
+python-dotenv>=1.0
+ipykernel>=6.29
+ipywidgets>=8.1
+nbformat>=5.10
+pyarrow>=15

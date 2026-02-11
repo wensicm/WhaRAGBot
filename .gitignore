@@ -1,0 +1,62 @@
+# Data and personal exports
+Chats en .zip/
+data/
+index/
+models/
+exports/
+datasets/
+tmp/
+cache/
+*.parquet
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.ods
+*.jsonl
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.tmp
+*.npy
+*.npz
+*.faiss
+*.index
+*embeddings*
+Chat de WhatsApp*
+chat_*.txt
+
+# Notebooks/runtime
+.ipynb_checkpoints/
+*.ipynb~
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.env
+.env.*
+!.env.example
+.python-version
+.venv/
+venv/
+AGENTS.md
+agents.md
+
+# Secrets and credentials
+*.pem
+*.key
+*.p12
+*.crt
+id_rsa
+id_ed25519
+secrets*.json
+credentials*.json
+
+# OS metadata
+.DS_Store
+Thumbs.db
