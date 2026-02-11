@@ -12,6 +12,19 @@ python3.12 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+## Protección de secretos (pre-commit)
+Activa hooks locales para bloquear claves y notebooks con outputs:
+```bash
+pip install pre-commit
+pre-commit install
+pre-commit run --all-files
+```
+El hook `repo-safety-check` bloquea commits con:
+- claves API/tokens/privadas en texto
+- archivos `.env*` (excepto `.env.example`)
+- `AGENTS.md` / `agents.md`
+- notebooks `.ipynb` con `outputs`
+
 ## Ejecutar el notebook
 ```bash
 jupyter notebook notebooks/wha-ragbot.ipynb

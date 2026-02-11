@@ -1,0 +1,20 @@
+minimum_pre_commit_version: "3.7.0"
+
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.6.0
+  hooks:
+  - id: check-added-large-files
+    args: ["--maxkb=1500"]
+  - id: check-yaml
+  - id: end-of-file-fixer
+  - id: trailing-whitespace
+  - id: detect-private-key
+
+- repo: local
+  hooks:
+  - id: repo-safety-check
+    name: Repository safety check (secrets + notebook outputs)
+    entry: python3.12 scripts/check_repo_safety.py
+    language: system
+    pass_filenames: true
