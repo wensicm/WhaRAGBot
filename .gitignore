@@ -60,3 +60,5 @@ credentials*.json
 # OS metadata
 .DS_Store
 Thumbs.db
+
+.codex/environments/environment.toml
